@@ -1,0 +1,9 @@
+a = '7869616f686f6e6720776f206169206e69'
+
+msg=''
+for i in range(0,len(a),2):
+    #b = '0x' +str(a[i:i+2])
+    b = '0x' +a[i:i+2]
+    c=chr(int(b,16))
+    msg += c
+print(msg)
